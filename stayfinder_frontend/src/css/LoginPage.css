@@ -1,0 +1,151 @@
+
+
+.site-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.nav-links button,
+.nav-links a {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.25rem;
+}
+
+.nav-links .signup {
+    font-weight: 600;
+}
+
+/* Section */
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 960px;
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 768px) {
+    .login-container {
+        flex-direction: row;
+    }
+}
+
+/* Form Side */
+.form-side {
+    width: 100%;
+    padding: 2rem;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: teal;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.input-group input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: teal;
+    box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.3);
+}
+
+.login-btn {
+    padding: 0.75rem;
+    background-color: teal;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #007d7d;
+}
+
+.extra-links {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666;
+}
+
+.extra-links a {
+    color: teal;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* Image Side */
+.image-side {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .image-side {
+        display: block;
+        width: 100%;
+    }
+
+    .image-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+}

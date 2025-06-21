@@ -1,0 +1,47 @@
+/* src/pages/BookingSuccess.css */
+
+.booking-success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6f9fc, #e0f7fa);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.booking-card {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.success-title {
+    color: #2ecc71;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.success-message {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.home-btn {
+    background-color: #ff385c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #e03150;
+}

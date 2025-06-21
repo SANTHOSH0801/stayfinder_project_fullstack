@@ -1,0 +1,170 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    position: relative;
+}
+
+.header-left,
+.header-center,
+.nav-links {
+    flex: 1;
+}
+
+/* Center image with absolute positioning */
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.website-name {
+    height: 60px;
+    width: auto;
+}
+
+/* Keep logo on the left */
+.header-left {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    gap: 1rem;
+}
+
+/* Navigation stays aligned right */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.signup-image {
+    width: 525px;      /* Adjust as needed */
+    height: 400px;     /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem 5rem;
+    }
+}
+
+.form-section {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-title {
+    font-size: -2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    text-align: left;
+    color: #718096;
+    margin-bottom: 2.5rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    outline: none;
+    color: black;
+    margin-bottom: 0.75rem;
+}
+
+.input-field:focus {
+    border-color: teal;
+    box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.2);
+}
+
+.submit-btn {
+    width: 110%;
+    background-color: #facc24;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: black;
+    border-radius: 9999px;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    display: block;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px; /* Match image width */
+}
+
+@media (min-width: 100px) {
+    .image-section {
+        width: 50%;
+        height: 30%;
+        /* Maintain the shorter height for larger screens */
+    }
+}
+
+
+.select-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-field2 {
+    width: 110%;
+    padding: 0.75rem 1.5rem;
+    padding-right: 3rem; /* Space for the arrow */
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    outline: none;
+    color: black;
+    margin-bottom: 0.75rem;
+    appearance: none; /* Remove default browser arrow */
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    cursor: pointer;
+}

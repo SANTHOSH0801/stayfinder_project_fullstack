@@ -1,0 +1,367 @@
+.listing-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.listing-left {
+    flex-basis: 70%;
+    /* 2/3 of the container */
+    min-width: 300px;
+    /* Minimum width */
+    max-width: 800px;
+    /* Optional: Set a maximum width */
+    height: auto;
+    /* Allow it to grow based on content */
+}
+
+.listing-right {
+    flex-basis: 30%;
+    /* 1/3 of the container */
+    min-width: 340px;
+    /* Minimum width */
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 20px;
+
+    position: sticky;
+    /* Make the right section sticky */
+    top: 80px;
+    /* Adjust based on your navbar height */
+    z-index: 1;
+    /* Ensure it stays above other content */
+    height: fit-content;
+    /* Allow it to grow with content */
+}
+
+/* Other styles remain unchanged */
+
+.guest-badge {
+    display: flex;
+    flex-direction: row;
+    background: #fff0f5;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 16px;
+    margin-left: 0px;
+    margin-right: 30px;
+    font-size: 14px;
+    gap: 16px;
+}
+
+.Location {
+    text-align: left;
+}
+
+.script {
+    text-align: left;
+}
+
+.guest-info {
+    flex: 2;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.rating-box {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.host-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.host-avatar {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.features li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.promo-tag {
+    background: #ffe0e6;
+    color: #b3004b;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.price-box {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.discounted {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d90429;
+}
+
+.note {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.date-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.date-box label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.date-box input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.guest-select {
+    margin-bottom: 16px;
+}
+
+.guest-select label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.guest-select select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.reserve-btn {
+    width: 100%;
+    background: #e60073;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.charge-note {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 8px;
+    color: #777;
+}
+
+.hr-l {
+    border-top: 0.5px solid rgb(202, 193, 193);
+    width: 80%;
+    /* You can adjust this value */
+    margin: 0 auto;
+}
+
+.listing-right.sticky-box {
+    position: sticky;
+    top: 80px;
+    /* Adjust based on your navbar height */
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.amenities-section {
+    margin-top: 32px;
+    text-align: left;
+}
+
+.amenities-section h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 12px 24px;
+    font-size: 15px;
+}
+
+.disabled {
+    color: #999;
+}
+
+.show-amenities-btn {
+    margin-top: 16px;
+    background-color: #f0f0f0;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.name {
+    text-align: left;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.review-card {
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.avatar-placeholder {
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.reviewer-info span {
+    display: block;
+    font-size: 12px;
+    color: gray;
+}
+
+.review-meta {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.show-more {
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.guest-select {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.guest-input-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 93%;
+}
+
+.guest-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mock-pay-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #ff5a5f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.mock-pay-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center align number and text */
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.reviews span:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}

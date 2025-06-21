@@ -1,0 +1,80 @@
+.card-section {
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9fb;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin: 1rem 0;
+}
+
+.row-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+
+.section-title {
+    margin: 0;
+    font-weight: 700;
+    color: #a9a9a9;
+    letter-spacing: 0.02em;
+}
+
+.scroll-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.scroll-buttons button {
+    background: #fff;
+    border: 1.5px solid #bbb;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition:  0.3s, border-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.scroll-buttons button:hover {
+    background: #e0e0e0;
+    border-color: #888;
+    transform: scale(1.1);
+}
+
+.card-row {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding-bottom: 1.2rem;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* IE and Edge */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    padding-left: 0.5rem;
+}
+
+.card-row::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.card-row > * {
+    flex: 0 0 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+
+.card-row > *:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}

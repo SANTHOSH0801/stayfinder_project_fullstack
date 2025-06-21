@@ -1,0 +1,105 @@
+.host-dashboard {
+    /* max-width: 600px; */
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.host-dashboard h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.host-dashboard form div {
+    margin-bottom: 18px;
+}
+
+.host-dashboard form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1rem;
+}
+
+.host-dashboard form input[type="text"],
+.host-dashboard form input[type="number"],
+.host-dashboard form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.host-dashboard form input[type="text"]:focus,
+.host-dashboard form input[type="number"]:focus,
+.host-dashboard form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.host-dashboard form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.host-dashboard form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.host-dashboard form button:hover {
+    background-color: #0056b3;
+}
+
+/* Photo upload section */
+.photo-upload {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.photo-upload input[type="file"] {
+    display: none;
+}
+
+.photo-upload label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.photo-upload label:hover {
+    background-color: #0056b3;
+}
+
+.photo-preview {
+    margin-top: 15px;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    object-fit: contain;
+}

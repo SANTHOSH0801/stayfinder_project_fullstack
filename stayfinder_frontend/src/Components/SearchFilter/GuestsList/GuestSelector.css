@@ -1,0 +1,67 @@
+.guest-selector {
+    position: absolute;
+    top: 300%;
+    /* shows below the button */
+    width: 300px;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left:-155px ;
+    z-index: 2000;
+}
+
+.guest-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.guest-row:last-child {
+    border-bottom: none;
+}
+
+.guest-info {
+    flex: 1;
+}
+
+.guest-label {
+    font-weight: 600;
+}
+
+.guest-sub {
+    padding-left: 17px;
+    font-size: 13px;
+    color: #666;
+}
+
+.guest-sub a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.guest-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.guest-count {
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+}
